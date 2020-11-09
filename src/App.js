@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
+import SampleButton from "./components/button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = (props) => {
+
+    const callFunction = () => {
+        alert(0);
+    }
+    return (
+        <div className="App">
+            <header>
+                <SampleButton
+                    buttonClick={this.callFunction}
+                    text={"Shan"}
+                />
+            </header>
+
+            <main>
+                <Page/>
+            </main>
+        </div>
+    );
 }
 
 export default App;
