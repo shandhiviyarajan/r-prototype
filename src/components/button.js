@@ -2,8 +2,13 @@ import React from 'react';
 
 const SampleButton = (props) => {
     console.log(props);
-    return (
+
+    const template = () =>{
         <button onClick={props.buttonClick}>{props.text}</button>
+    }
+
+    return (
+        template();
     )
 }
 
